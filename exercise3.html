@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing image</title>
+</head>
+<body>
+    <form name="form">
+        <select id="showimage onchange=myFunction()">
+            <option value="select" selected>select</option>
+            <option value="Norway">Norway</option>
+        </select>
+    </form>
+    <div>
+        <img id="myImg" src="images/norway.jpeg" style="width: 300px; height: 300px;">
+        
+        </div>
+        
+        <script>
+        function myFunction() {
+            document.getElementById("myImg").src="images/noname.jpeg" ;
+        }
+        </script>
+        
+</body>
+</html>
